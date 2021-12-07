@@ -5,12 +5,201 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Custom Styles -->
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <!--#### Custom Styles ####-->
+    <!-- Mobile -->
     <link rel="stylesheet" href="css/styles.css">
-    <title>Belgrano - Home</title>
+    <!-- Tablet -->
+    <link rel="stylesheet" href="css/medium.css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="css/large.css">
+    <title>Buenos Aires CC - Home</title>
 </head>
 <body>
+    <!-- Hero image -->
+    <div class="hero-image-container">
+        <picture>
+            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/tablet/hero-home.jpg">
+            <source media="(min-width: 1024px)" srcset="images/desktop/hero-home.jpg">
+            <img src="images/mobile/hero-home.jpg" alt="Hero image of Buenos Aires, Retiro">
+        </picture>
+    </div>
+
+    <!-- Header start -->
+    <header class="primary-background">
+        <div class="logo-container">
+            <a href="index.html">
+                <!-- <img src="images/logo.png" alt="Logo of Buenos Aires CC"> -->
+                <h1>BA</h1>
+            </a>
+        </div>
+        <nav class="navigation">
+            <!-- This is the hamburguer menu icon Stylized with css and handled with JS -->
+            <div class="toggle-menu-icon" id="toggleMenu">
+                <div class="bar bar1"></div>
+                <div class="bar bar2"></div>
+                <div class="bar bar3"></div>
+            </div>
+            <!-- Menu that hides in mobile views -->
+            <ul id="menu" class="hide">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Buenos Aires</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Directory</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="container normal-section">
+        <h2>Chamber of Commerce of Buenos Aires</h2>
+        
+        <p class="text-center">
+            Welcome to the CCBA! Here you will learn a little more about this beautiful city! And specially more about the local businesses to enjoy their amazing products! We hope you can notice how enjoyable it is to be part of our chamber. Our purpose is to encourage the local businesses by providing reviews for you to see and links for you to visit their websites.
+        </p>
+    </section>
+    <div class="container-large first-message text-center">Buen Viaje!</div>
     
+    <!-- Main content starts -->
+    <main>
+        <!-- Local businesses section -->
+        <section class="container-large normal-section local-business">
+            <div class="local-ad-content container">
+                <h2>Local Sucesses</h2>
+
+                <!-- First Local -->
+                <div class="business">
+                    <h3>Deniro</h3>
+                    <div class="business-content">
+                        <img src="images/business/deniro.png" alt="An image of Deniro Hamburguers">
+                        <p>What a great place for hamburgers! There you have so many options to choose! We’re sure you’d never regret this!</p>
+                    </div>
+                    <a class="site-link" target="_blank" href="https://www.denirohamburgueseria.com.ar/">Go to Deniro</a>
+                    <hr>
+                </div>
+                <!-- Second Local -->
+                <div class="business">
+                    <h3>Praline Cakes</h3>
+                    <div class="business-content">
+                        <img src="images/business/pralineCakes.jpg" alt="An image of Praline Cakes">
+                        <p>This is the definitive bakery. Here you will find all the chocolate you can eat in the form of a cake, a cookie, milkshakes and muffins.</p>
+                    </div>
+                    <a class="site-link" target="_blank" href="http://pralinecakes.com/">Go to Praline Cakes</a>
+                    <hr>
+                </div>
+                <!-- Third Local -->
+                <div class="business">
+                    <h3>Trattoria Olivetti</h3>
+                    <div class="business-content">    
+                        <img src="images/business/trattoriaOlivetti.jpeg" alt="An image of Trattoria Olivetti">
+                        <p>What is Buenos Aires without pasta? Trattoria Olivetti is the place if you are looking to be amazed and experiment a brand new experience.</p>
+                    </div>
+                    <a class="site-link" target="_blank" href="http://pralinecakes.com/">Go to Trattoria Olivetti</a>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Call to action -->
+        <section class="normal-section call-to-action-section container-large">
+            <div class="container">
+                <h2>Are you willing to be part of our chamber?</h2>
+            </div>
+            <a href="#" class="cta-btn">Join us!</a>
+        </section>
+
+        <!-- Next Events section -->
+        <section class="normal-section container">
+            <h2>Upcoming Events!</h2>
+            <!-- First event -->
+            <div class="event">
+                <h3>Magia y Sinfonía</h3>
+                <p>It will be at the Teatro Colón. “Magia y Sinfonía” its a musical about important moments in cinematographic world of Disney .</p>
+                <p>Date: <span>Feb 11 2022</span></p>
+                <p>Time: <span>7 p.m</span></p>
+                <p>Location: <span>Teatro Colón</span></p>
+                <a target="_blank" href="https://teatrocolon.org.ar/en">Read more</a>
+            </div>
+            <!-- Second event -->
+            <div class="event">
+                <h3>Oceanic Station</h3>
+                <p>A space that addresses the history of our oceans, the emblematic species that inhabited them, their problems and the conservation projects of our Argentine Sea.</p>
+                <p>Date: <span>Apr 14 2022</span></p>
+                <p>Time: <span>4 p.m</span></p>
+                <p>Location: <span>Ecoparque</span></p>
+                <a target="_blank" href="https://disfrutemosba.buenosaires.gob.ar/evento/estacion-oceanica/6269">Read more</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Weather information section -->
+    <section class="container">
+        <h2>Weather Information</h2>
+        <!-- Today's weather -->
+        <div class="today-weather">
+            <h3 id="todayTemp"></h3>
+            <img id="todayIcon">
+            <p id="todayDescription"></p>
+            <p id="todayHumidity"></p>
+        </div>
+
+        <!-- 3 day forecast -->
+        <section class="container">
+            <h2>Next days Forecast</h2>
+            <div id="forecastContainer">
+                <!-- Provided with JS -->
+            </div>
+        </section>
+    </section>
+
+    <footer class="primary-background">
+        <div class="footer-content container">
+
+            <section class="footer-section">
+                <h3>Contact Us</h3>
+                <hr>
+                <a href="tel:+542213149028">Tel: +542213149028</a>
+                <a href="mailto:info@chambercba.com">Email: info@chambercba.com</a>
+                <!-- Replace this after -->
+                <a href="#">Go to Contact Page</a>
+            </section>
+            <section class="footer-section">
+                <h3>Last Modified</h3>
+                <hr>
+                <!-- Last modified inserted with JS -->
+                <p id="lastModified"></p>
+            </section>
+            <section class="footer-section">
+                <h3>Copyright</h3>
+                <hr>
+                <!-- Year updated with JS -->
+                <p>Designed and Developed by Santiago Pintus | <span id="currentYear">2021</span> &copy;</p>
+            </section>
+            <div class="social-icons-cont">
+                <hr>
+                <nav>
+                    <ul class="social-icons-ul">
+                        <li><a href="https://www.snapchat.com" target="_blank">
+                            <img src="images/social/snapchat.svg" alt="Icon of Snapchat">
+                        </a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">
+                            <img src="images/social/instagram.svg" alt="Icon of Instagram">
+                        </a></li>
+                        <li><a href="https://www.whatsapp.com" target="_blank">
+                            <img src="images/social/whatsapp.svg" alt="Icon of Whatsapp">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Webfont scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+    <!-- Fetching weather -->
+    <script src="js/fetchWeather.js"></script>
     <!-- Main scripts -->
     <script src="js/scripts.js"></script>
 </body>

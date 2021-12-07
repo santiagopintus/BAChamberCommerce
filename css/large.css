@@ -1,0 +1,29 @@
+/* MEDIA QUERIES FOR DESKTOP */
+@media only screen and (min-width: 1024px) {
+    /*============ GLOBALS ==========*/
+    body {
+        /* For texts that are not paragraphs */
+        font-size: 2.4rem;
+    }
+    p {font-size: 1.8rem;}
+    .container-large {
+        width: 90%;
+        max-width: 120rem;
+        /* I write it this way to avoid overwritting margin top and bottom values */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /*============ HOME ============= */
+    /*--- Header ---*/
+    header ul li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+    .navigation .toggle-menu-icon {
+        display: none;
+    }
+    .navigation #menu.hide {
+        display: flex;
+    }
+
+}

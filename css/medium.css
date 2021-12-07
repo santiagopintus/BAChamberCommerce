@@ -1,0 +1,16 @@
+/* MEDIA QUERIES FOR TABLETS */
+@media only screen and (min-width: 768px) {
+    /*============ GLOBALS ==========*/
+    /*============ HOME ============= */
+    /*--- Header ---*/
+    header {
+        margin: 0;
+    }
+
+    /* Forecast section */
+    #forecastContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
