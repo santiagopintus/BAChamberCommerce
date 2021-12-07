@@ -1,0 +1,14 @@
+/* Urbanist font from Google */
+@import url('https://fonts.googleapis.com/css2?family=Urbanist:wght@100;300;400;700;900&display=swap');
+
+/* Variables */
+:root {
+    --primary: #68BAEF;
+    --secondary: #FFB703;
+    --accent: #023047;
+    --accent2: #FB8500;
+    --black: #020E12;
+    --white: #FFFFFF;
+
+    --font: 'Urbanist', sans-serif;
+}
