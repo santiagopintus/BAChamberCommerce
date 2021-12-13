@@ -16,23 +16,35 @@ fetch(currentWeatherUrl)
     });
 
 function createHtml(response) {
+    /* This function creates the HTML of the current weather section */
+    const $todayContainer = document.getElementById('todayContainer');
+
     // Obtaining temperature
-    const $temp = document.getElementById('todayTemp');
+    const $temp = document.createElement('h3');
     const temp = response.main.temp;
     $temp.innerHTML = `${temp} °F`;
+
     // Obtaining icon
-    const $icon = document.getElementById('todayIcon');
+    const $icon = document.createElement('img');
     const icon = response.weather[0].icon;
     $icon.src = `https://openweathermap.org/img/wn/${icon}@4x.png`;
+    $icon.alt = response.weather[0].description;
 
     // Obtaining weather description
-    const $todayDescription = document.getElementById('todayDescription');
+    const $todayDescription = document.createElement('p');
     const desc = response.weather[0].description;
     $todayDescription.innerHTML = desc;
+
     // Obtaining humidity
-    const $humidity = document.getElementById('todayHumidity');
+    const $humidity = document.createElement('p');
     const humidity = response.main.humidity;
     $humidity.innerHTML = `Humidity: ${humidity}%`;
+
+    // Adding elements to container
+    $todayContainer.appendChild($temp);
+    $todayContainer.appendChild($icon);
+    $todayContainer.appendChild($todayDescription);
+    $todayContainer.appendChild($humidity);
 }
 
 fetch(forecastURL)
