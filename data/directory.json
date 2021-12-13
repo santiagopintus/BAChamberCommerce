@@ -1,0 +1,45 @@
+
+[
+    {
+        "title": "Deniro",
+        "logo": "../images/business/deniro_logo.png",
+        "website": "https://www.denirohamburgueseria.com.ar/",
+        "contact": "+54 011 3447-6196"
+    },
+    {
+        "title": "Praline Cakes",
+        "logo": "../images/business/pralineCakes_logo.png",
+        "website": "http://pralinecakes.com/",
+        "contact": "+54 011 3140-5576"
+    },
+    {
+        "title": "Trattoria Olivetti",
+        "logo": "../images/business/trattoriaOlivetti_logo.png",
+        "website": "https://www.trattoriaolivetti.com/",
+        "contact": "+54 011 4802-4075"
+    },
+    {
+        "title": "Artentino",
+        "logo": "../images/business/artentino_logo.png",
+        "website": "https://www.artentino.com.ar/",
+        "contact": "+54 011 3877-1920"
+    },
+    {
+        "title": "Mercado de San Telmo",
+        "logo": "../images/business/sanTelmo_logo.png",
+        "website": "https://www.facebook.com/MercadoSanTelmoOficial/",
+        "contact": "+54 011 4300-9778"
+    },
+    {
+        "title": "Mila Kartei",
+        "logo": "../images/business/milaKartei_logo.png",
+        "website": "https://www.milakartei.com/",
+        "contact": "+54 011 3441-1193"
+    },
+    {
+        "title": "Maldón",
+        "logo": "../images/business/maldon_logo.png",
+        "website": "https://www.maldon.com.ar/",
+        "contact": "+54 011 4773-6029"
+    }
+]

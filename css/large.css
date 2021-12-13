@@ -1,11 +1,6 @@
 /* MEDIA QUERIES FOR DESKTOP */
 @media only screen and (min-width: 1024px) {
     /*============ GLOBALS ==========*/
-    body {
-        /* For texts that are not paragraphs */
-        font-size: 2.4rem;
-    }
-    p {font-size: 1.8rem;}
     .container-large {
         width: 90%;
         max-width: 120rem;
@@ -14,10 +9,32 @@
         margin-right: auto;
     }
     /*============ HOME ============= */
+    /* hero */
+    .hero-home {
+        background-position: 0 -10rem;
+    }
     /*--- Header ---*/
+    header .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
     header ul li {
         display: inline-block;
-        margin-right: 1rem;
+        margin-right: 2rem;
+    }
+    header ul li a {
+        position: relative;
+        transition: all 200ms ease-in;
+    }
+    header ul:hover li a{
+        filter: blur(1px);
+        opacity: .7;
+    }
+    header ul li a:hover {
+        transform: scale(1.2);
+        opacity: 1;
+        filter: none;
+        font-weight: 700;
     }
     .navigation .toggle-menu-icon {
         display: none;
@@ -25,5 +42,23 @@
     .navigation #menu.hide {
         display: flex;
     }
-
+    /* ======== BUENOS AIRES PAGE =========== */
+    /* Events */
+    .events-container-page {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* Gallery */
+    .gallery-container {
+        gap: 2rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    /* ======== JOIN US PAGE =========== */
+    .membership-level-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    /* ========  DIRECTORY  ============ */
+    #directoryContainer.grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+    }
 }

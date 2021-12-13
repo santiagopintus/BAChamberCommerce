@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Custom meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fictitious Chamber of commerce of Buenos Aires, designed and developed for a course in the university of BYUI.">
+    <meta name="author" content="Santiago Pintus">
+    <!-- Color theme for mobile devices -->
+    <meta name="theme-color" content="#023047">
+    
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="../images/favicon.svg">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <!--#### Custom Styles ####-->
+    <!-- Mobile -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="../css/medium.css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="../css/large.css">
+    <title>Directory - Buenos Aires CC</title>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="primary-background">
+        <div class="container header-content">
+
+            <!-- Logo container -->
+            <a class="logo-link" href="../index.html">
+                <div class="logo-container">
+                    <h2>BA</h2>
+                    <img src="../images/logo.svg" alt="Logo of the CCBA">
+                </div>
+            </a>
+            <nav class="navigation">
+                <!-- This is the hamburguer menu icon Stylized with css and handled with JS -->
+                <div class="toggle-menu-icon" id="toggleMenu">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <!-- Menu that hides in mobile views -->
+                <ul id="menu" class="hide">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="buenos-aires.html">Buenos Aires</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero-section hero-directory">
+        <h1>Directory</h1>
+    </section>
+
+    <!-- Main content starts -->
+    <main class="container">
+        <h1>Directory of succesful businesses</h1>
+
+        <div class="view-icons-container">
+            <p>View:</p>
+            <div class="view-icons">
+                <img src="../images/icons/grid-icon.svg" alt="Grid view icon" id="gridBtn">
+                <img src="../images/icons/list-icon.svg" alt="List view icon" id="listBtn">
+            </div>
+        </div>
+
+        <section class="container" id="directoryContainer">
+            <!-- Data from JSON file here -->
+        </section>
+    </main>
+
+    <footer class="primary-background">
+        <div class="footer-content container">
+            <div class="footer-columns">
+
+                <!-- First column -->
+                <section class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <a target="_blank" href="tel:+542213149028">Tel: +542213149028</a>
+                    <a target="_blank" href="mailto:info@chambercba.com">Email: info@chambercba.com</a>
+                    <a href="contact.html">Go to Contact Page</a>
+                </section>
+
+                <!-- Second column -->
+                <section class="footer-section">
+                    <h3>Last Modified</h3>
+                    <hr>
+                    <!-- Last modified inserted with JS -->
+                    <p id="lastModified"></p>
+                </section>
+
+                <!-- Third column -->
+                <section class="footer-section">
+                    <h3>Copyright</h3>
+                    <hr>
+                    <!-- Year updated with JS -->
+                    <p>Designed and Developed by <a target="_blank" href="https://github.com/santiagopintus">Santiago Pintus</a> | <span id="currentYear">2021</span> &copy;</p>
+                </section>
+            </div>
+            <div class="social-icons-cont">
+                <hr>
+                <nav>
+                    <ul class="social-icons-ul">
+                        <li><a href="https://www.snapchat.com" target="_blank">
+                            <img src="../images/social/snapchat.svg" alt="Icon of Snapchat">
+                        </a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">
+                            <img src="../images/social/instagram.svg" alt="Icon of Instagram">
+                        </a></li>
+                        <li><a href="https://www.whatsapp.com" target="_blank">
+                            <img src="../images/social/whatsapp.svg" alt="Icon of Whatsapp">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Webfont scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+
+    <!-- Main scripts -->
+    <script src="../js/scripts.js"></script>
+    <!-- Fetch Directory -->
+    <script src="../js/directoryScripts.js"></script>
+</body>
+</html>

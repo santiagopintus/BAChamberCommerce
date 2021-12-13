@@ -1,10 +1,19 @@
 /* MEDIA QUERIES FOR TABLETS */
 @media only screen and (min-width: 768px) {
     /*============ GLOBALS ==========*/
+    p {
+        font-size: 1.8rem;
+    }
+    .btn {
+        width: fit-content;
+    }
     /*============ HOME ============= */
     /*--- Header ---*/
     header {
         margin: 0;
+    }
+    header.home-header {
+        margin-top: 0rem;
     }
 
     /* Forecast section */
@@ -12,5 +21,110 @@
         display: flex;
         justify-content: center;
         align-items: center;
+    }
+    #forecastContainer .one-day {
+        border-bottom: none;
+        border-right: 1px solid var(--accent);
+    }
+
+    /* ========= BUENOS AIRES PAGE ========= */
+    /* History */
+    .event-page {
+        margin-bottom: 0;
+    }
+    /* Business */
+    .business-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .business-content p {
+        margin-top: 0;
+    }
+    .site-link {
+        margin: 2rem 0;
+    }
+    /* Events */
+    .events-container-page {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .reading-block {
+        max-width: 70rem;
+    }
+    /* Gallery */
+    .gallery-container {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: 1fr 1fr;
+    }
+    .gallery-container .gallery-item {
+        margin-bottom: 0;
+    }
+
+    /* ========= JOIN US PAGE ========= */
+    /* Form */
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: start;
+    }
+    .membership-level-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    .membership-section .membership-level {
+        margin-bottom: 0;
+    }
+    /* ============ DIRECTORY ===========*/
+    .view-icons-container {
+        display: flex;
+        margin: 2rem 0 2rem auto;
+        width: fit-content;
+        align-items: center;
+        gap: 2rem;
+    }
+    .view-icons {
+        display: flex;
+        align-items: center;
+        gap: 2rem;
+    }
+    .view-icons img {
+        cursor: pointer;
+        width: 3.2rem;
+    }
+    /* By default list view is on */
+    #directoryContainer .card {
+        display: flex;
+        gap: 2rem;
+    }
+    #directoryContainer .card .card-img-container {
+        max-width: 20rem;
+    }
+
+    /* When grid view is on */
+    #directoryContainer.grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+    }
+    #directoryContainer.grid .card {
+        display: block;
+    }
+    #directoryContainer.grid .card .card-img-container {
+        max-width: unset;
+    }
+
+    /*============== FOOTER =============*/
+    footer .footer-columns {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 2rem;
+    }
+    .footer-columns .footer-section {
+        text-align: start;
     }
 }

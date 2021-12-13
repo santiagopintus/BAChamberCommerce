@@ -1,12 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Custom meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    <meta name="description" content="Fictitious Chamber of commerce of Buenos Aires, designed and developed for a course in the university of BYUI.">
+    <meta name="author" content="Santiago Pintus">
+    <!-- Color theme for mobile devices -->
+    <meta name="theme-color" content="#023047">
+    
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="images/favicon.svg">
     <!-- Normalize CSS -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" href="css/normalize.min.css">
     <!--#### Custom Styles ####-->
     <!-- Mobile -->
     <link rel="stylesheet" href="css/styles.css">
@@ -18,43 +25,42 @@
 </head>
 <body>
     <!-- Hero image -->
-    <div class="hero-image-container">
-        <picture>
-            <source media="(min-width: 768px) and (max-width: 1023px)" srcset="images/tablet/hero-home.jpg">
-            <source media="(min-width: 1024px)" srcset="images/desktop/hero-home.jpg">
-            <img src="images/mobile/hero-home.jpg" alt="Hero image of Buenos Aires, Retiro">
-        </picture>
+    <div class="hero-section hero-home">
     </div>
 
     <!-- Header start -->
-    <header class="primary-background">
-        <div class="logo-container">
-            <a href="index.html">
-                <!-- <img src="images/logo.png" alt="Logo of Buenos Aires CC"> -->
-                <h1>BA</h1>
+    <header class="primary-background home-header">
+        <div class="container header-content">
+
+            <!-- Logo container -->
+            <a class="logo-link" href="../index.html">
+                <div class="logo-container">
+                    <h2>BA</h2>
+                    <img src="../images/logo.svg" alt="Logo of the CCBA">
+                </div>
             </a>
+            <nav class="navigation">
+                <!-- This is the hamburguer menu icon Stylized with css and handled with JS -->
+                <div class="toggle-menu-icon" id="toggleMenu">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <!-- Menu that hides in mobile views -->
+                <ul id="menu" class="hide">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="pages/buenos-aires.html">Buenos Aires</a></li>
+                    <li><a href="pages/join.html">Join</a></li>
+                    <li><a href="pages/directory.html">Directory</a></li>
+                    <li><a href="pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-        <nav class="navigation">
-            <!-- This is the hamburguer menu icon Stylized with css and handled with JS -->
-            <div class="toggle-menu-icon" id="toggleMenu">
-                <div class="bar bar1"></div>
-                <div class="bar bar2"></div>
-                <div class="bar bar3"></div>
-            </div>
-            <!-- Menu that hides in mobile views -->
-            <ul id="menu" class="hide">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#">Buenos Aires</a></li>
-                <li><a href="#">Join</a></li>
-                <li><a href="#">Directory</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        </nav>
     </header>
 
     <!-- Introduction -->
     <section class="container normal-section">
-        <h2>Chamber of Commerce of Buenos Aires</h2>
+        <h1>Chamber of Commerce of Buenos Aires</h1>
         
         <p class="text-center">
             Welcome to the CCBA! Here you will learn a little more about this beautiful city! And specially more about the local businesses to enjoy their amazing products! We hope you can notice how enjoyable it is to be part of our chamber. Our purpose is to encourage the local businesses by providing reviews for you to see and links for you to visit their websites.
@@ -96,7 +102,7 @@
                         <img src="images/business/trattoriaOlivetti.jpeg" alt="An image of Trattoria Olivetti">
                         <p>What is Buenos Aires without pasta? Trattoria Olivetti is the place if you are looking to be amazed and experiment a brand new experience.</p>
                     </div>
-                    <a class="site-link" target="_blank" href="http://pralinecakes.com/">Go to Trattoria Olivetti</a>
+                    <a class="site-link" target="_blank" href="https://www.trattoriaolivetti.com/">Go to Trattoria Olivetti</a>
                 </div>
 
             </div>
@@ -107,7 +113,7 @@
             <div class="container">
                 <h2>Are you willing to be part of our chamber?</h2>
             </div>
-            <a href="#" class="cta-btn">Join us!</a>
+            <a href="pages/join.html" class="cta-btn">Join us!</a>
         </section>
 
         <!-- Next Events section -->
@@ -131,6 +137,8 @@
                 <p>Location: <span>Ecoparque</span></p>
                 <a target="_blank" href="https://disfrutemosba.buenosaires.gob.ar/evento/estacion-oceanica/6269">Read more</a>
             </div>
+
+            <a class="btn btn-primary" href="pages/buenos-aires.html#events">See more events</a>
         </section>
     </main>
 
@@ -156,27 +164,34 @@
 
     <footer class="primary-background">
         <div class="footer-content container">
+            <div class="footer-columns">
+                
+                <!-- First column -->
+                <section class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <a target="_blank" href="tel:+542213149028">Tel: +542213149028</a>
+                    <a target="_blank" href="mailto:info@chambercba.com">Email: info@chambercba.com</a>
+                    <a href="pages/contact.html">Go to Contact Page</a>
+                </section>
+                
+                <!-- Second column -->
+                <section class="footer-section">
+                    <h3>Last Modified</h3>
+                    <hr>
+                    <!-- Last modified inserted with JS -->
+                    <p id="lastModified"></p>
+                </section>
 
-            <section class="footer-section">
-                <h3>Contact Us</h3>
-                <hr>
-                <a href="tel:+542213149028">Tel: +542213149028</a>
-                <a href="mailto:info@chambercba.com">Email: info@chambercba.com</a>
-                <!-- Replace this after -->
-                <a href="#">Go to Contact Page</a>
-            </section>
-            <section class="footer-section">
-                <h3>Last Modified</h3>
-                <hr>
-                <!-- Last modified inserted with JS -->
-                <p id="lastModified"></p>
-            </section>
-            <section class="footer-section">
-                <h3>Copyright</h3>
-                <hr>
-                <!-- Year updated with JS -->
-                <p>Designed and Developed by Santiago Pintus | <span id="currentYear">2021</span> &copy;</p>
-            </section>
+                <!-- Third column -->
+                <section class="footer-section">
+                    <h3>Copyright</h3>
+                    <hr>
+                    <!-- Year updated with JS -->
+                    <p>Designed and Developed by <a target="_blank" href="https://github.com/santiagopintus">Santiago Pintus</a> | <span id="currentYear">2021</span> &copy;</p>
+                </section>
+            </div>
+            <!-- Social icons -->
             <div class="social-icons-cont">
                 <hr>
                 <nav>

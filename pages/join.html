@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Custom meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fictitious Chamber of commerce of Buenos Aires, designed and developed for a course in the university of BYUI.">
+    <meta name="author" content="Santiago Pintus">
+    <!-- Color theme for mobile devices -->
+    <meta name="theme-color" content="#023047">
+    
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="../images/favicon.svg">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <!--#### Custom Styles ####-->
+    <!-- Mobile -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="../css/medium.css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="../css/large.css">
+    <title>Join the chamber - Buenos Aires CC</title>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="primary-background">
+        <div class="container header-content">
+
+            <!-- Logo container -->
+            <a class="logo-link" href="../index.html">
+                <div class="logo-container">
+                    <h2>BA</h2>
+                    <img src="../images/logo.svg" alt="Logo of the CCBA">
+                </div>
+            </a>
+            <nav class="navigation">
+                <!-- This is the hamburguer menu icon Stylized with css and handled with JS -->
+                <div class="toggle-menu-icon" id="toggleMenu">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <!-- Menu that hides in mobile views -->
+                <ul id="menu" class="hide">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="buenos-aires.html">Buenos Aires</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero-section hero-join">
+        <h1>Join us!</h1>
+    </section>
+
+    <!-- Main content starts -->
+    <main class="container">
+        
+        <section class="container normal-section">
+            <h1>Join the Buenos Aires CC</h1>
+            <h2>Why join us?</h2>
+            <p class="reading-block">By joining us, you and your associates will know an <b>incredible society</b> where everyone supports each other. As one of our partners, we will give <b>integral advice</b> on accounting, tax, and legal matters. We will also provide access to workshops, courses, and conferences, promoting education and training to <b>enhance your professional skills</b>. You and your team will participate in promotional campaigns. These campaigns are aimed at boosting sales, competitiveness, and economic development. What are you waiting? <b>You'll love this experience!</b></p>
+        </section>
+
+        <section class="container-large normal-section">
+            <h2>Complete the following information to request the association.</h2>
+            <div class="form-container">
+                <form class="form" id="joinForm">
+                    <fieldset>
+                        <legend>Personal information</legend>
+                        <!-- First Name -->
+                        <label for=fName>First Name<span class="label-required">*</span></label>
+                        <input type="text" id="fName" name="fName" required>
+                        <!-- Last Name -->
+                        <label for=lName>Last Name<span class="label-required">*</span></label>
+                        <input type="text" id="lName" name="lName" required>
+                        <!-- Title -->
+                        <label for=title>Title</label>
+                        <input type="text" id="title" name="title">
+                        <!-- Email -->
+                        <label for=email>Email<span class="label-required">*</span></label>
+                        <input type="email" id="email" name="email" required>
+                        <!-- Cell Phone -->
+                        <label for=cellPhone>Cell Phone</label>
+                        <input type="tel" id="cellPhone" name="cellPhone">
+                    </fieldset>
+                    <fieldset>
+                        <legend>Professional Information</legend>
+                        <!-- Business Name -->
+                        <label for=businessName>Business Name<span class="label-required">*</span></label>
+                        <input type="text" id="businessName" name="businessName" required>
+                        <!-- Business Address -->
+                        <label for=businessAddress>Business Address</label>
+                        <input type="text" id="businessAddress" name="businessAddress">
+                        <!-- Business Website -->
+                        <label for=businessWebsite>Business Website</label>
+                        <input type="text" id="businessWebsite" name="businessWebsite">
+                        <!-- Business Description -->
+                        <label for=businessDescription>Business Description</label>
+                        <textarea id="businessDescription" name="businessDescription"></textarea>
+                        <!-- Membership Level -->
+                        <h4>Membership Level</h4>
+
+                        <p>*See membership levels details after this form.</p>
+
+                        <label>Non-profit ($100)
+                            <input type="radio" name="membership" value="non-profit">
+                        </label>
+
+                        <label>Bronze ($200)
+                            <input type="radio" name="membership" value="bronze">
+                        </label>
+
+                        <label>Silver ($400)
+                            <input type="radio" name="membership" value="silver">
+                        </label>
+
+                        <label>Gold ($1000)
+                            <input type="radio" name="membership" value="gold">
+                        </label>
+
+                    </fieldset>
+                    <button class="btn btn-primary">Request association</button>
+                </form>
+
+                <figure class="form-figure">
+                    <img src="../images/pages/join-form.jpg" alt="A team in a boat paddling together">
+                    <figcaption>
+                        <p>We are stronger together</p>
+                    </figcaption>
+                </figure>
+            </div>
+        </section>
+
+        <section class="container membership-section">
+            <h3>Membership Levels</h3>
+            <p>The membership levels are based on the amount of money you will contribute to the association. The more money you contribute, the higher your membership level will be. The levels are:</p>
+            <ul>
+                <li>Non-profit: $100</li>
+                <li>Bronze: $200</li>
+                <li>Silver: $400</li>
+                <li>Gold: $1000</li>
+            </ul>
+            <div class="membership-level-container">
+                <div class="membership-level">
+                    <h4>Non-profit</h4>
+                    <ul>
+                        <li>Integral advice on accounting, tax, and legal matters</li>
+                        <li>Access to workshops, courses, and conferences</li>
+                        <li>Promotional campaigns</li>
+                        <li>-</li>
+                        <li>-</li>
+                        <li>-</li>
+                    </ul>
+                    <p>Cost: $100/year</p>
+                </div>
+
+                <div class="membership-level">
+                    <h4>Bronze</h4>
+                    <ul>
+                        <li>Integral advice on accounting, tax, and legal matters</li>
+                        <li>Access to workshops, courses, and conferences</li>
+                        <li>Promotional campaigns</li>
+                        <li>Access to the Buenos Aires CC's elite website</li>
+                        <li>-</li>
+                        <li>-</li>
+                    </ul>
+                    <p>Cost: $200/year</p>
+                </div>
+
+                <div class="membership-level">
+                    <h4>Silver</h4>
+                    <ul>
+                        <li>Integral advice on accounting, tax, and legal matters</li>
+                        <li>Access to workshops, courses, and conferences</li>
+                        <li>Promotional campaigns</li>
+                        <li>Access to the Buenos Aires CC's elite website</li>
+                        <li>Face to face meetings and follow up calls</li>
+                        <li>-</li>
+                    </ul>
+                    <p>Cost: $400/year</p>
+                </div>
+
+                <div class="membership-level">
+                    <h4>Gold</h4>
+                    <ul>
+                        <li>Integral advice on accounting, tax, and legal matters</li>
+                        <li>Access to workshops, courses, and conferences</li>
+                        <li>Promotional campaigns</li>
+                        <li>Access to the Buenos Aires CC's elite website</li>
+                        <li>Face to face meetings and follow up calls</li>
+                        <li>Individual calls with succesfuls and famous CEO's</li>
+                    </ul>
+                    <p>Cost: $1000/year</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="primary-background">
+        <div class="footer-content container">
+            <div class="footer-columns">
+
+                <!-- First column -->
+                <section class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <a target="_blank" href="tel:+542213149028">Tel: +542213149028</a>
+                    <a target="_blank" href="mailto:info@chambercba.com">Email: info@chambercba.com</a>
+                    <a href="contact.html">Go to Contact Page</a>
+                </section>
+
+                <!-- Second column -->
+                <section class="footer-section">
+                    <h3>Last Modified</h3>
+                    <hr>
+                    <!-- Last modified inserted with JS -->
+                    <p id="lastModified"></p>
+                </section>
+
+                <!-- Third column -->
+                <section class="footer-section">
+                    <h3>Copyright</h3>
+                    <hr>
+                    <!-- Year updated with JS -->
+                    <p>Designed and Developed by <a target="_blank" href="https://github.com/santiagopintus">Santiago Pintus</a> | <span id="currentYear">2021</span> &copy;</p>
+                </section>
+            </div>
+            <div class="social-icons-cont">
+                <hr>
+                <nav>
+                    <ul class="social-icons-ul">
+                        <li><a href="https://www.snapchat.com" target="_blank">
+                            <img src="../images/social/snapchat.svg" alt="Icon of Snapchat">
+                        </a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">
+                            <img src="../images/social/instagram.svg" alt="Icon of Instagram">
+                        </a></li>
+                        <li><a href="https://www.whatsapp.com" target="_blank">
+                            <img src="../images/social/whatsapp.svg" alt="Icon of Whatsapp">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Webfont scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+
+    <!-- Main scripts -->
+    <script src="../js/scripts.js"></script>
+    <!-- Page scripts -->
+    <script src="../js/joinScripts.js"></script>
+</body>
+</html>

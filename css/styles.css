@@ -8,7 +8,10 @@
     --accent: #023047;
     --accent2: #FB8500;
     --black: #020E12;
+    --lightGray: #e4e4e4;
     --white: #FFFFFF;
+    
+    --soft-shadow: 0 2px 6px -2px rgba(0, 0, 0, 0.4);
 
     --font: 'Urbanist', sans-serif;
 }
@@ -50,11 +53,14 @@ h1, h2, h3, h4 {
     margin-top: 5rem;
     padding: 2rem 0;
 }
-/* For header and footer */
+    /* For header and footer */
 .primary-background {
     background-color: var(--accent);
 }
-.primary-background p, .primary-background h1, .primary-background h2, .primary-background h3, .primary-background h4, .primary-background a, .primary-background ul li a {
+.primary-background p, .primary-background h1, 
+.primary-background h2, .primary-background h3, 
+.primary-background h4, .primary-background a, 
+.primary-background ul li a {
     color: var(--white);
 }
 .primary-background .bar {
@@ -63,8 +69,34 @@ h1, h2, h3, h4 {
 .primary-background hr {
     border-color: var(--white);
 }
+/* Buttons */
+.btn {
+    display: block;
+    text-decoration: none;
+    padding: 1rem 2rem;
+    border: none;
+    box-shadow: var(--soft-shadow);
+    font-size: 2rem;
+    width: 100%;
+    cursor: pointer;
+    transition: background-color 200ms ease-in-out;
+    margin: 2rem 0;
+}
+.btn:hover {
+    background-color: var(--accent2);
+}
+.btn-primary {
+    background-color: var(--primary);
+    color: var(--black);
+}
+.centered-btn {
+    margin: 0 auto;
+}
 
-/*============ Home Styles ===========*/
+
+/*==================================*/
+/*============ HOME PAGE ===========*/
+/*==================================*/
 
 /* Hero */
 .hero-image-container {
@@ -78,19 +110,32 @@ h1, h2, h3, h4 {
 /*--- HEADER ---*/
 header {
     padding: 1rem 0;
-    margin-top: -10px;
     width: 100%;
+}
+
+header.home-header {
+    margin-top: -1rem;
+}
+header .header-content {
     display: flex;
     align-items: center;
     flex-direction: column;
 }
-header .logo-container a h1{
+header .logo-container {
+    display: flex;
+    gap: .5rem;
+}
+header .logo-container img {
+    width: 5rem;
+}
+header .logo-container h2{
+    font-size: 3.6rem;
     margin: .5rem 0;
 }
-header .logo-container a, .navigation li a {
+
+header .logo-link, .navigation li a {
     text-decoration: none;
     color: var(--accent);
-    width: 100%;
     text-align: center;
 }
 .navigation ul {
@@ -178,10 +223,10 @@ header .logo-container a, .navigation li a {
     text-align: start;
     margin-bottom: 0;
 }
-.event span {
+.event span, .event-page span {
     font-weight: 700;
 }
-.event a {
+.event a, .event-page a {
     color: var(--accent);
 }
 /* Weather section */
@@ -219,40 +264,284 @@ header .logo-container a, .navigation li a {
 #forecastContainer .one-day:last-of-type {
     border: none;
 }
+/*====================================*/
+/*====     BUENOS AIRES PAGE    ===== */
+/*====================================*/
+/* HERO */
+.hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-section h1 {
+    margin: 0;
+    font-weight: 700;
+    color: var(--white);
+    font-size: 7rem;
+}
+.hero-home {
+    background-image: url('../images/heros/home.jpg');
+}
+.hero-ba {
+    background-image: url("../images/heros/ba.jpg");
+}
+.hero-ba h1 .yell-span {
+    color: var(--secondary);
+}
+.hero-ba h1 .blue-span {
+    color: var(--primary);
+}
 
-/*============== FOOTER ==============*/
+.hero-join {
+    background-image: url("../images/heros/join.jpg");
+}
+.hero-directory {
+    background-image: url("../images/heros/directory.jpg");
+}
+.hero-contact {
+    background-image: url("../images/heros/contact.jpg");
+    background-position: top;
+}
+.hero-thankyou {
+    background-image: url("../images/heros/thankyou.jpg");
+}
+/* History */
+.reading-block {
+    display: block;
+    margin: 0 auto;
+    max-width: 40rem;
+    line-height: 1.5;
+}
+/* Events */
+.event-page {
+    background-color: var(--primary);
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+.event-page h3 {
+    margin-top: 1rem;
+}
+.magic-places-section {
+    background-color: var(--accent);
+    color: var(--white);
+    padding: 2rem 0;
+}
+.magic-places-section iframe {
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    height: 45rem;
+    border: none;
+}
+/* Gallery */
+.gallery-container .gallery-item{
+    padding: 1rem;
+    background-color: var(--primary);
+    margin-bottom: 2rem;
+}
+.gallery-container .gallery-item p {
+    margin: 1rem 0 0;
+}
+
+/*====================================*/
+/*======     JOIN US PAGE    ======== */
+/*====================================*/
+form.form {
+    margin-bottom: 5rem;
+}
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.form-container .form-figure {
+    margin: 0;
+}
+.form-container .form-figure img{
+    width: 100%;
+}
+.form-container .form-figure p {
+    margin-top: .5rem;
+}
+form.form fieldset {
+    box-shadow: var(--soft-shadow);
+    margin-bottom: 3rem;
+    padding: 0 2rem;
+    border: none;
+    border-top: 1px solid var(--accent);
+}
+form.form legend {
+    font-weight: 700;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    padding: 0 1rem;
+}
+form.form .label-required {
+    color: red;
+}
+form.form input,
+form.form textarea {
+    display: block;
+    margin-bottom: 2rem;
+    min-height: 4rem;
+    border: 1px solid var(--accent);
+    border: none;
+    border-bottom: 1px solid var(--accent);
+    background-color: #fafafa;
+    border-top-right-radius: 2rem;
+    padding: 1rem;
+}
+form.form textarea {
+    min-height: 20rem;
+    width: 100%;
+}
+.membership-section .membership-level {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: var(--soft-shadow);
+    padding: 1rem 0 0;
+    margin-bottom: 2rem;
+}
+.membership-level ul{
+    padding-right: 1rem;
+}
+.membership-level p {
+    font-weight: 700;
+    background-color: var(--secondary);
+    margin: 0;
+    padding: 2rem;
+}
+
+/*====================================*/
+/*==========    DIRECTORY    =========*/
+/*====================================*/
+.view-icons-container {
+    display: none;
+}
+
+.card {
+    background-color: var(--lightGray);
+    margin-bottom: 2rem;
+    padding: .3rem;
+}
+
+.card .card-img-container {
+    background-color: var(--white);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+}
+.card .card-info-container {
+    padding: .5rem;
+    max-width: 100%;
+}
+.card .card-info-container h3{
+    text-align: start;
+}
+.card .card-info-container p{
+    font-size: 1.8rem;
+}
+
+/*====================================*/
+/*==========    CONTACT      =========*/
+/*====================================*/
+.contact-main section{
+    margin-bottom: 5rem;
+}
+.contact-form {
+    max-width: 45rem;
+    margin: 3rem auto;
+}
+.contact-methods, .board-directors {
+    max-width: 45rem;
+    margin: 0 auto;
+}
+.contact-methods .contact-method,
+.board-directors .board-director {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+.contact-methods .contact-method img,
+.board-directors .board-director img {
+    width: 2.8rem;
+}
+.board-director p{
+    font-weight: 700;
+}
+.contact-map-container {
+    max-width: fit-content;
+    margin: 0 auto;
+}
+.contact-map-container .map{
+    height: 45rem;
+    width: 60rem;
+    max-width: 100%;
+}
+
+
+/*====================================*/
+/*==========     FOOTER      =========*/
+/*====================================*/
 footer {
     padding: 4rem 0;
     text-align: center;
     margin-top: 5rem;
 }
+
+footer .footer-columns a {
+    font-size: 1.8rem;
+}
+
+footer .footer-columns a:last-of-type {
+    font-weight: 700;
+}
+
 footer hr {
     border: 1px solid var(--accent);
     margin-top: 0;
 }
+
 .footer-section {
     margin-bottom: 2rem;
 }
+
 .footer-section h3 {
     margin-bottom: .2rem;
 }
+
 .footer-section a {
     text-decoration: none;
-    display: block;
     padding: .5rem 0;
 }
+.footer-section.contact a{
+    display: block;
+}
+
 .social-icons-cont {
     margin-top: 5rem;
 }
+
 .social-icons-ul {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     gap: 2rem;
+    max-width: 40rem;
 }
+
 .social-icons-ul img {
     width: 3rem;
 }

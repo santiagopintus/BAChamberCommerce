@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Custom meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Fictitious Chamber of commerce of Buenos Aires, designed and developed for a course in the university of BYUI.">
+    <meta name="author" content="Santiago Pintus">
+    <!-- Color theme for mobile devices -->
+    <meta name="theme-color" content="#023047">
+    
+    <!-- Favicon image -->
+    <link rel="shortcut icon" href="../images/favicon.svg">
+    <!-- Normalize CSS -->
+    <link rel="stylesheet" href="../css/normalize.min.css">
+    <!--#### Custom Styles ####-->
+    <!-- Mobile -->
+    <link rel="stylesheet" href="../css/styles.css">
+    <!-- Tablet -->
+    <link rel="stylesheet" href="../css/medium.css">
+    <!-- Desktop -->
+    <link rel="stylesheet" href="../css/large.css">
+    <title>Contact Us - Buenos Aires CC</title>
+</head>
+<body>
+    <!-- Header start -->
+    <header class="primary-background">
+        <div class="container header-content">
+            
+            <!-- Logo container -->
+            <a class="logo-link" href="../index.html">
+                <div class="logo-container">
+                    <h2>BA</h2>
+                    <img src="../images/logo.svg" alt="Logo of the CCBA">
+                </div>
+            </a>
+            <nav class="navigation">
+                <!-- This is the hamburguer menu icon Stylized with css and handled with JS -->
+                <div class="toggle-menu-icon" id="toggleMenu">
+                    <div class="bar bar1"></div>
+                    <div class="bar bar2"></div>
+                    <div class="bar bar3"></div>
+                </div>
+                <!-- Menu that hides in mobile views -->
+                <ul id="menu" class="hide">
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="buenos-aires.html">Buenos Aires</a></li>
+                    <li><a href="join.html">Join</a></li>
+                    <li><a href="directory.html">Directory</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <!-- HERO -->
+    <section class="hero-section hero-contact">
+        <h1>Contact us</h1>
+    </section>
+
+    <!-- Main content starts -->
+    <main class="contact-main">
+        <!-- Welcome to contact -->
+        <section class="container">
+            <h1>Communicate your consults to us</h1>
+            <p class="text-center">We are always open to discuss new ideas and projects. If you have any questions, please contact us.</p>
+        </section>
+
+        <!-- Contact information -->
+        <section class="container">
+            <h2>Contact Information</h2>
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <img src="../images/icons/phone.svg" alt="Phone icon">
+                    <p>+542213149028</p>
+                </div>
+                <div class="contact-method">
+                    <img src="../images/icons/email.svg" alt="E-Mail icon">
+                    <p>info@chambercba.com</p>
+                </div>
+                <div class="contact-method">
+                    <img src="../images/icons/location.svg" alt="Location icon">
+                    <p>Carlos Pellegrini 999, C1043 CABA</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form -->
+        <section class="container">
+            <form class="form contact-form">
+                <fieldset>
+                    <legend>Send us a message</legend>
+
+                    <!-- Name input -->
+                    <label for="name">Name:</label>
+                    <input type="text" name="name" id="name">
+                    <!-- Phone Input -->
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone">
+                    <!-- Email input -->
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email">
+                    <!-- Message -->
+                    <label for="message">Message:</label>
+                    <textarea name="message" id="message"></textarea>
+
+                    <button class="btn btn-primary">Send comment</button>
+                </fieldset>
+            </form>
+        </section>
+
+        <section class="container">
+            <h2>Board directors</h2>
+            <div class="board-directors">
+                <div class="board-director">
+                    <img src="../images/icons/person.svg" alt="Person icon">
+                    <p>Santiago A. Pintus</p>
+                    <span>- President</span>
+                </div>
+                <div class="board-director">
+                    <img src="../images/icons/person.svg" alt="Person icon">
+                    <p>Elsa A. Benuzzi</p>
+                    <span>- Vice-President</span>
+                </div>
+                <div class="board-director">
+                    <img src="../images/icons/person.svg" alt="Person icon">
+                    <p>Ronaldo F. Ricagno</p>
+                    <span>- Secretary</span>
+                </div>
+        </section>
+
+        <!-- Map -->
+        <section class="container contact-map-container">
+            <h3>Here's a map of our city</h3>
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d210147.39707532423!2d-58.57338494756603!3d-34.615461116377574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcca3b4ef90cbd%3A0xa0b3812e88e88e87!2sBuenos%20Aires%2C%20CABA!5e0!3m2!1ses-419!2sar!4v1639405577771!5m2!1ses-419!2sar"style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
+    </main>
+
+    <footer class="primary-background">
+        <div class="footer-content container">
+            <div class="footer-columns">
+
+                <!-- First column -->
+                <section class="footer-section contact">
+                    <h3>Contact Us</h3>
+                    <hr>
+                    <a target="_blank" href="tel:+542213149028">Tel: +542213149028</a>
+                    <a target="_blank" href="mailto:info@chambercba.com">Email: info@chambercba.com</a>
+                    <p>You are in contact page already</p>
+                </section>
+
+                <!-- Second column -->
+                <section class="footer-section">
+                    <h3>Last Modified</h3>
+                    <hr>
+                    <!-- Last modified inserted with JS -->
+                    <p id="lastModified"></p>
+                </section>
+
+                <!-- Third column -->
+                <section class="footer-section">
+                    <h3>Copyright</h3>
+                    <hr>
+                    <!-- Year updated with JS -->
+                    <p>Designed and Developed by <a target="_blank" href="https://github.com/santiagopintus">Santiago Pintus</a> | <span id="currentYear">2021</span> &copy;</p>
+                </section>
+            </div>
+            <div class="social-icons-cont">
+                <hr>
+                <nav>
+                    <ul class="social-icons-ul">
+                        <li><a href="https://www.snapchat.com" target="_blank">
+                            <img src="../images/social/snapchat.svg" alt="Icon of Snapchat">
+                        </a></li>
+                        <li><a href="https://www.instagram.com" target="_blank">
+                            <img src="../images/social/instagram.svg" alt="Icon of Instagram">
+                        </a></li>
+                        <li><a href="https://www.whatsapp.com" target="_blank">
+                            <img src="../images/social/whatsapp.svg" alt="Icon of Whatsapp">
+                        </a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Webfont scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webfont/1.6.28/webfontloader.js"></script>
+
+    <!-- Main scripts -->
+    <script src="../js/scripts.js"></script>
+</body>
+</html>
