@@ -81,6 +81,7 @@ h1, h2, h3, h4 {
     cursor: pointer;
     transition: background-color 200ms ease-in-out;
     margin: 2rem 0;
+    text-align: center;
 }
 .btn:hover {
     background-color: var(--accent2);

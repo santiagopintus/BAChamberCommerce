@@ -88,22 +88,22 @@
 
         <!-- Contact Form -->
         <section class="container">
-            <form class="form contact-form">
+            <form class="form contact-form" id="contactForm">
                 <fieldset>
                     <legend>Send us a message</legend>
 
                     <!-- Name input -->
-                    <label for="name">Name:</label>
-                    <input type="text" name="name" id="name">
+                    <label for="name">Name<span class="label-required">*</span></label>
+                    <input type="text" name="name" id="name" required>
                     <!-- Phone Input -->
-                    <label for="phone">Phone:</label>
+                    <label for="phone">Phone</label>
                     <input type="tel" name="phone" id="phone">
                     <!-- Email input -->
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email">
+                    <label for="email">Email<span class="label-required">*</span></label>
+                    <input type="email" name="email" id="email" required>
                     <!-- Message -->
-                    <label for="message">Message:</label>
-                    <textarea name="message" id="message"></textarea>
+                    <label for="message">Message<span class="label-required">*</span></label>
+                    <textarea name="message" id="message" required></textarea>
 
                     <button class="btn btn-primary">Send comment</button>
                 </fieldset>
@@ -190,5 +190,7 @@
 
     <!-- Main scripts -->
     <script src="../js/scripts.js"></script>
+    <!-- Form scripts -->
+    <script src="../js/formScripts.js"></script>
 </body>
 </html>

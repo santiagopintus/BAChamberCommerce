@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 function listenForm() {
-    const form = document.querySelector('#joinForm');
+    const form = document.querySelector('#contactForm');
 
     form.addEventListener('submit', (e) => { 
         e.preventDefault();
