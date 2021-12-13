@@ -23,7 +23,7 @@ function createHtml(data) {
         </div>
 
         <div class="card-info-container">
-            <h3>${item.title}</h3>
+            <h2>${item.title}</h2>
             <a href="${item.website}" target="_blank">Go to ${item.title}</a>
             <p>Contact: ${item.contact}</p>
         </div>`;

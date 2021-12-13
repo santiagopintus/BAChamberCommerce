@@ -215,6 +215,7 @@ header .logo-link, .navigation li a {
     text-align: center;
     display: block;
     background-image: url('../images/callToAction.jpg');
+    /* background-color: var(--accent); */
     background-size: cover;
     background-position: center center;
 }

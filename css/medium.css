@@ -104,6 +104,9 @@
     #directoryContainer .card .card-img-container {
         max-width: 20rem;
     }
+    #directoryContainer .card .card-info-container h2{
+        text-align: start;
+    }
 
     /* When grid view is on */
     #directoryContainer.grid {
@@ -116,6 +119,9 @@
     }
     #directoryContainer.grid .card .card-img-container {
         max-width: unset;
+    }
+    #directoryContainer.grid .card .card-info-container h2{
+        text-align: center;
     }
 
     /*============== FOOTER =============*/
